@@ -1,0 +1,94 @@
+.wrapper {
+    flex-grow: 1;
+    padding-left: 2rem;
+    margin-left: 2rem;
+    border-left: 1px solid var(--text-color);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    .header {
+        font-size: 2rem;
+        font-weight: 900;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        .icon {
+            font-size: 3rem;
+            margin-right: 1.5rem;
+        }
+    }
+    .form {
+        display: block;
+        width: 100%;
+        .inputGroup {
+            display: flex;
+            width: 80%;
+            flex-direction: column;
+            margin: 2rem 0;
+            border-radius: 3px;
+            position: relative;
+            .noFind {
+                margin-top: 0.5rem;
+                font-size: 1.4rem;
+                color: var(--danger);
+                position: absolute;
+                bottom: -2rem;
+                right: 0;
+            }
+
+            label {
+                color: var(--text-color);
+                margin-bottom: 1rem;
+            }
+
+            input {
+                border: 1px solid;
+                padding: 1rem;
+            }
+            select {
+                border: 1px solid;
+                outline: none;
+                padding: 1rem;
+                font-size: 1.6rem;
+            }
+            textarea {
+                width: 100%;
+                height: 10rem;
+                padding: 12px 20px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                background-color: #f8f8f8;
+                resize: none;
+                outline: none;
+            }
+        }
+        .btnSubmit {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            margin: 1rem 0;
+            button {
+                padding: 1.5rem 0;
+                width: 100%;
+                height: 100%;
+                font-size: 2rem;
+                font-weight: 550;
+                border-radius: 5px;
+            }
+        }
+        #change {
+            button {
+                color: black;
+                background-color: gainsboro;
+                &:hover {
+                    color: white;
+                    background-color: black;
+                }
+            }
+        }
+    }
+}

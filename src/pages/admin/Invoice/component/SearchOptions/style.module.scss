@@ -1,0 +1,95 @@
+.wrapperSearchOptions {
+    display: flex;
+    margin-left: 2rem;
+    .containerSearch {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-right: 2rem;
+        padding-right: 1rem;
+        border: 1px solid var(--border-color);
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+        input {
+            min-width: 22rem;
+            width: 100%;
+            height: 100%;
+            padding: 0.5rem 1rem;
+        }
+        .findGlass {
+            padding: 0.5rem;
+        }
+    }
+
+    .containerOptions {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .titleFiter {
+            border-radius: 5px;
+            cursor: pointer;
+            border: 1px solid;
+            font-size: 1.4rem;
+            padding: 0.4rem 1rem;
+        }
+        .contentFilter {
+            box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.5);
+            z-index: 999;
+            background-color: white;
+            position: absolute;
+            top: -1px;
+            left: 5.5rem;
+            width: auto;
+            .filterItem {
+                &:last-child {
+                    padding: 0.6rem 0;
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:first-child {
+                    cursor: pointer;
+                    padding: 0 1rem;
+                    justify-content: flex-end;
+                    .icon {
+                        opacity: 0.5;
+                        font-size: 2rem;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    button {
+        margin: 0;
+        border-radius: 3px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: white;
+        padding: 0.4rem 1rem;
+        background-color: #269eff;
+        width: 50%;
+        text-align: center;
+        box-shadow: none;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    .noFilter {
+        margin-left: 2rem;
+        font-size: 1.4rem;
+        width: 100px;
+    }
+    .cancelFilter {
+        display: flex;
+        position: absolute;
+        top: 7.7rem;
+    }
+}

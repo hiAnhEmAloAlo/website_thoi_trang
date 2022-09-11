@@ -1,0 +1,28 @@
+.modal {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #f0f2f5;
+    .navLink {
+        padding: 2rem 7rem;
+        position: absolute;
+        z-index: 9999;
+        cursor: pointer;
+        &:hover {
+            color: black;
+        }
+    }
+}

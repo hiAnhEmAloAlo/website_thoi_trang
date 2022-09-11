@@ -1,0 +1,98 @@
+.wrapperSearchBar {
+    display: flex;
+    width: 50%;
+    border: 1px solid var(--border-color);
+    height: 100%;
+    position: relative;
+    .back {
+        position: absolute;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        top: 3px;
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid var(--border-color);
+        right: -16rem;
+        &:hover {
+            background-color: #f1f1f1;
+        }
+    }
+    .searchBar {
+        position: relative;
+        padding-left: 1.8rem;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+
+        input {
+            flex: 1;
+            height: 100%;
+            font-size: 1.6rem;
+            padding: 1.2rem 0;
+            background-color: transparent;
+        }
+        &::after {
+            content: '';
+            height: 2.8rem;
+            width: 1px;
+            position: absolute;
+            top: 9px;
+            right: 5rem;
+            background-color: rgba(22, 24, 35, 0.5);
+        }
+        &:focus-within {
+            border: 1px solid rgba(22, 24, 35, 0.1);
+            box-shadow: 0 0 1rem rgba(22, 24, 35, 0.1);
+        }
+        button {
+            border: none;
+            box-shadow: none;
+            width: 5rem;
+            border-radius: 50%;
+            font-size: 1.8rem;
+            color: rgba(22, 24, 35, 0.34);
+            background-color: transparent;
+            cursor: pointer;
+            &:hover {
+                background-color: rgba(22, 24, 35, 0.05);
+            }
+        }
+        .clearBtn {
+            background-color: transparent;
+        }
+    }
+    .suggest {
+        background-color: white;
+        z-index: 999;
+        min-height: 4.6rem;
+        width: 100.2%;
+        height: auto;
+        border: 1px solid var(--border-color);
+        position: absolute;
+        top: 4.5rem;
+        & > span {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 1rem 2rem;
+            min-height: 4.6rem;
+        }
+        .suggestItem {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            min-height: 4.6rem;
+            span {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 95%;
+            }
+            &:hover {
+                background-color: #f1f1f1;
+            }
+        }
+    }
+}

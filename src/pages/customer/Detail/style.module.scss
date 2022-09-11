@@ -1,0 +1,191 @@
+.wrapperDetail {
+    display: flex;
+    justify-content: space-between;
+    padding: 7rem;
+    position: relative;
+
+    .wrapperNavigate {
+        position: absolute;
+        top: 1rem;
+    }
+    .Image {
+        width: calc((100% - 20rem) / 3);
+        border: 1px solid gray;
+        border-radius: 3px;
+        max-height: 45rem;
+        display: flex;
+
+        justify-content: center;
+        height: auto;
+        padding: 0.3rem;
+
+        img {
+            width: 100%;
+        }
+    }
+    .content {
+        flex-grow: 1;
+        margin: 0 2rem;
+        padding: 1rem;
+        border-bottom: 1px solid var(--border-color);
+        p {
+            line-height: 2.6rem;
+            margin: 1rem 0;
+            span:first-child {
+                color: var(--text-color);
+                margin-right: 1rem;
+            }
+        }
+        select {
+            width: 15rem;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            outline: none;
+            border-radius: 4px;
+        }
+        select[multiple] {
+            padding-right: 1rem;
+            height: 6rem;
+        }
+        option {
+            padding: 1rem 1.5rem;
+        }
+        .count {
+            display: flex;
+            align-items: center;
+
+            span {
+                color: var(--text-color);
+            }
+            input {
+                text-align: center;
+                font-size: 2rem;
+                max-width: 5rem;
+                border-bottom: 1px solid var(--border-color);
+                border-top: 1px solid var(--border-color);
+            }
+            .btnCount {
+                display: flex;
+                margin-left: 1rem;
+                span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.8rem;
+                    padding: 0 2rem;
+                    border-top: 1px solid var(--border-color);
+                    border-bottom: 1px solid var(--border-color);
+                }
+            }
+            button {
+                padding: 0 1.2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2.4rem;
+                text-align: center;
+                border-radius: 3px;
+                background-color: white;
+                border: 1px solid var(--border-color);
+            }
+        }
+        .name {
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
+        .price {
+            #price {
+                font-size: 1.6rem;
+                text-decoration: line-through;
+                color: var(--text-color);
+            }
+            .Tien {
+                font-size: 2.2rem;
+                color: red;
+                margin-left: 1rem;
+            }
+            #discount {
+                border: 1px solid;
+                font-size: 1.4rem;
+                padding: 0.2rem 0.4rem;
+                border-radius: 5px;
+                overflow: hidden;
+                margin-left: 1.5rem;
+                color: white;
+                font-weight: 600;
+                background-color: #ee4d2d;
+            }
+        }
+        .btnContent {
+            display: flex;
+            .btn {
+                border: 1px solid;
+                padding: 1rem 1.2rem;
+                font-size: 1.6rem;
+                margin: 2rem;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+            #addBtn {
+                color: #ee4d2d;
+                background-color: #ffeee8;
+
+                &:hover {
+                    background-color: #fcf4f1;
+                }
+            }
+            #buyBtn {
+                background-color: #ee4d2d;
+                color: white;
+                &:hover {
+                    background-color: #ed684e;
+                }
+            }
+        }
+    }
+    .suport {
+        width: 35%;
+        height: auto;
+        h3 {
+            color: #ee4d2d;
+            padding: 0 1rem;
+        }
+        .suportContent {
+            width: 100%;
+            height: auto;
+            border: 1px solid var(--border-color);
+            border-top: 3px solid #ee4d2d;
+            padding: 2rem ;
+            margin-top: 1rem;
+            & > p {
+                color: #ee4d2d;
+                text-align: center;
+            }
+            .titleSuport {
+                border: 1px solid;
+                padding: 1rem 2rem;
+                margin: 1.5rem;
+                background-color: #ee4d2d;
+                color: white;
+                font-weight: 600;
+            }
+            .policy {
+                margin: 1rem 0;
+                .number {
+                    display: inline-block;
+                    border: 1px solid;
+                    padding: 0.2rem 0.8rem;
+                    border-radius: 5px;
+                    background-color: #ee4d2d;
+                    color: white;
+                    margin-bottom: 0.3rem;
+                }
+                .description {
+                    display: inline-block;
+                    padding-left: 0.5rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

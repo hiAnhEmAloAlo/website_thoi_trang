@@ -1,0 +1,21 @@
+.wrapperFilter {
+    min-width: 25rem;
+    width: auto;
+    h4 {
+        margin-bottom: 1.5rem;
+    }
+
+    .filterItem {
+        display: flex;
+        width: 100%;
+    }
+    label {
+        width: 100%;
+        cursor: pointer;
+
+        input {
+            margin-right: 1rem;
+        }
+        margin-bottom: 1rem;
+    }
+}

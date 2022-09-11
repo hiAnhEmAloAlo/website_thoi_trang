@@ -1,0 +1,119 @@
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .wrapperTblPro {
+        height: 300px;
+        overflow: auto;
+    }
+    .title {
+        font-size: 1.6rem;
+        text-align: center;
+        font-weight: 900;
+        margin-bottom: 1rem;
+    }
+    .search {
+        margin-bottom: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .btnSave {
+        display: block;
+        cursor: pointer;
+        padding: 0.2rem 0.4rem;
+        border-radius: 5px;
+        color: black;
+        box-shadow: 0 0 0.2rem rgba($color: #000000, $alpha: 0.5);
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+.wrapperInfo {
+    flex-grow: 1;
+    padding-left: 2rem;
+    margin-left: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    .header {
+        font-size: 2rem;
+        font-weight: 900;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        .icon {
+            font-size: 3rem;
+            margin-right: 1.5rem;
+        }
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        .inputGroup {
+            display: flex;
+            width: 80%;
+            flex-direction: column;
+            margin: 0.5rem 0;
+            border-radius: 3px;
+            label {
+                color: var(--text-color);
+                margin-bottom: 1rem;
+            }
+
+            input {
+                font-size: 1.8rem;
+                border: 1px solid;
+                padding: 1rem;
+            }
+            select {
+                border: 1px solid;
+                outline: none;
+                padding: 1rem;
+                font-size: 1.6rem;
+            }
+            textarea {
+                width: 100%;
+                height: 10rem;
+                padding: 12px 20px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                background-color: #f8f8f8;
+                resize: none;
+                outline: none;
+            }
+        }
+        .btnSubmit {
+            width: 100%;
+            display: flex;
+            margin-top: 1rem;
+            button {
+                padding: 1.5rem 0;
+                width: 80%;
+                height: 100%;
+                font-size: 2rem;
+                font-weight: 550;
+                border-radius: 5px;
+                margin: 0;
+            }
+        }
+        #change {
+            button {
+                color: black;
+                background-color: gainsboro;
+                &:hover {
+                    color: white;
+                    background-color: black;
+                }
+            }
+        }
+    }
+}

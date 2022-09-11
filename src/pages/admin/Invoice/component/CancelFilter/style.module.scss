@@ -1,0 +1,25 @@
+.wrapperCancel {
+    display: flex;
+    border: 1px solid var(--border-color);
+    margin-right: 1rem;
+    align-items: center;
+    padding: 0 1rem;
+    cursor: default;
+    border-radius: 40px;
+
+    &:hover {
+        background-color: #f9f2f2;
+    }
+    span {
+        flex-grow: 1;
+        font-size: 1.4rem;
+        padding: 0.5rem 1rem;
+    }
+    .icon {
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

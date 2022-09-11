@@ -1,0 +1,313 @@
+.wrapper {
+    margin: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .active {
+        background-color: #333;
+        color: var(--white);
+    }
+    button {
+        box-shadow: 0 0 0.5rem rgba($color: #000000, $alpha: 0.2);
+        &:hover {
+            box-shadow: 0 0 0.5rem rgba($color: #000000, $alpha: 0.5);
+        }
+    }
+    .edit {
+        min-width: 100px;
+    }
+}
+
+.nav {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    button {
+        border: 1px solid var(--border-color);
+    }
+    .btnAdd {
+        background-color: var(--addBtn);
+        color: var(--white);
+    }
+}
+.content {
+    width: 100%;
+    margin-top: 2rem;
+
+    button {
+        background-color: transparent;
+        padding: 8px 12px;
+        margin: 0 0.5rem;
+        border-radius: 2rem;
+    }
+}
+.modalBody {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    .modalLayer {
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba($color: gray, $alpha: 0.7);
+    }
+    .modalContainer {
+        z-index: 101;
+        position: absolute;
+        width: 75%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--white);
+        border-radius: 1.2rem;
+        overflow: hidden;
+        .modalHeader {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            color: var(--white);
+            background-color: var(--addBtn);
+            .icon {
+                font-size: 2.4rem;
+            }
+        }
+
+        .modalContent {
+            .modalBtn {
+                width: 100%;
+                display: flex;
+                margin-top: 2rem;
+                justify-content: center;
+                button {
+                    min-width: 12rem;
+                    background-color: var(--success);
+                    color: white;
+                }
+            }
+            .gender {
+                display: flex;
+                .genderItem {
+                    input {
+                        margin-right: 0.5rem;
+                    }
+                    margin-right: 2rem;
+                }
+                .genderItem:first-child {
+                    margin-bottom: 0.5rem;
+                }
+            }
+            width: 100%;
+            padding: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .modalInput {
+                display: flex;
+                vertical-align: middle;
+                width: 48%;
+                margin-bottom: 1rem;
+                label {
+                    min-width: 12rem;
+                    display: block;
+                }
+                select {
+                    border: 1px solid var(--border-color);
+                    cursor: pointer;
+                    &:focus {
+                        box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.5);
+                    }
+                }
+                #select {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .selectTypes {
+                    width: 100%;
+                    height: 4rem;
+                    font-size: 1.6rem;
+                    outline: none;
+                    .option {
+                        padding: 1rem;
+                    }
+                }
+                input {
+                    flex-grow: 1;
+                    padding: 1rem;
+                    font-size: 1.6rem;
+                    border: 1px solid var(--border-color);
+                    &::placeholder {
+                        font-size: 1.6rem;
+                    }
+                    &:focus {
+                        box-shadow: 0 0 0.5rem var(--border-color);
+                    }
+                }
+            }
+        }
+    }
+    .addImg {
+        width: 100%;
+        display: flex;
+
+        img {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .previewIMG {
+            min-width: 20rem;
+            max-width: 30rem;
+            min-height: 20rem;
+            border-radius: 8px;
+            margin-left: 2rem;
+            overflow: hidden;
+            background-color: rgba($color: gray, $alpha: 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .noIMG {
+                font-size: 4rem;
+            }
+        }
+        button {
+            max-height: 3.5rem;
+            border: 1px solid;
+        }
+    }
+}
+.wrapperTblPro {
+    margin-top: 2rem;
+    position: relative;
+    .wrapperBtn {
+        position: absolute;
+        right: 0;
+        top: -4.4rem;
+        button {
+            background-color: var(--addBtn);
+            color: var(--white);
+        }
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        border-radius: 1rem;
+        border-spacing: 1px;
+        font-size: 1.6rem;
+        .nameWrapper {
+            // max-width: 15rem;
+            // flex-wrap: wrap;
+            // overflow: hidden;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            position: relative;
+
+            span {
+                transition: width 1s he;
+                cursor: help;
+            }
+
+            .name {
+                width: 90%;
+                display: block;
+                border: none;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-width: 18rem;
+                &:hover ~ .fullName {
+                    opacity: 0.7;
+                    transition-delay: 0.5s;
+                }
+            }
+            .fullName {
+                max-width: 50rem;
+                position: absolute;
+                top: 1.8rem;
+                white-space: nowrap;
+                transition: 0.1s linear;
+                padding: 0.5rem;
+                background-color: black;
+                color: white;
+                opacity: 0;
+                border-radius: 3px;
+                transition-timing-function: linear;
+            }
+        }
+        .imgWrapper {
+            overflow: hidden;
+            display: flex;
+            margin-left: 15px;
+            max-height: 10rem;
+            max-width: 10rem;
+            img {
+                object-fit: contain;
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        td,
+        th {
+            padding: 0.5rem;
+            line-height: 1.3;
+        }
+        th {
+            background-color: #dbe1fb;
+        }
+        button {
+            color: var(--white);
+            box-shadow: 0 0 0.5rem rgba($color: #000000, $alpha: 0.4);
+            &:hover {
+                box-shadow: 0 0 0.5rem rgba($color: #000000, $alpha: 0.6);
+            }
+        }
+        .delete {
+            background-color: var(--danger);
+        }
+        .edit {
+            background-color: var(--warning);
+        }
+        .addInstock {
+            width: 100%;
+            width: 100%;
+            cursor: pointer;
+            color: white;
+            font-weight: 600;
+            &:hover {
+                opacity: 0.8;
+            }
+            .iconPlus {
+                color: black;
+                box-shadow: 0 0 0.6rem rgba($color: #000, $alpha: 0.3);
+                border-radius: 5px;
+                padding: 0.5rem 0;
+                background-color: #fff;
+                width: 350px;
+                font-size: 2.2rem;
+                font-weight: bold;
+                &:hover {
+                    background-color: #cbddf8;
+                }
+            }
+        }
+    }
+    @keyframes changeColor {
+        from {
+            background-color: gray;
+        }
+        to {
+            background-color: aquamarine;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.nav {
+    background-color: #f799ba;
+    width: 100%;
+    padding: 0.5rem 7rem;
+    height: 5rem;
+    font-size: 1.4rem;
+    color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    .text {
+        text-align: center;
+        p {
+            text-transform: uppercase;
+        }
+    }
+    a {
+        background-color: transparent;
+        border: 2px solid var(--black);
+        min-width: 8rem;
+        color: var(--black);
+        padding: 0.8rem 1.2rem;
+        max-height: 4rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+}

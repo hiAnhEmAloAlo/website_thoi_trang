@@ -1,0 +1,70 @@
+.wrapper {
+    width: 100%;
+    background-color: #eee;
+    min-height: 100vh;
+    .header {
+        width: 100%;
+        height: 8.8rem;
+        padding: 0 19rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container {
+        display: flex;
+        width: 100%;
+        padding: 0 19rem;
+        .active{
+            background-color: aquamarine;
+            
+        }
+        .navBar {
+            width: 30%;
+            a{
+                width: 100%;
+                cursor: pointer;
+                padding: 2rem 2.5rem;
+                font-size: 1.6rem;
+                color: black;
+                &:hover span
+                 {  
+                    
+                    text-decoration: underline;
+                }
+            }
+            .list {
+                .listItem {
+                    background-color: white;
+                    border-radius: 3px;
+                    margin-bottom: 0.8rem;
+                    display: flex;
+                    align-items: center;
+                    
+                    &:first-child{
+                        font-size: 1.6rem;
+                        padding: 2rem 2.5rem;
+                    }
+                    &:last-child{
+                        cursor: pointer;
+                        font-size: 1.6rem;
+                        padding: 2rem 2.5rem;
+                        &:hover span
+                 {  
+                    
+                    text-decoration: underline;
+                }
+                    }
+                    &:first-child:hover span,
+                    &:first-child:hover {
+                        cursor: text;
+                        text-decoration: none;
+                    }
+                    .icon {
+                        font-size: 2.5rem;
+                        margin-right: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

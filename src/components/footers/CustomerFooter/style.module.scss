@@ -1,0 +1,84 @@
+.wrapperFooter {
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+    .social {
+        min-width: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .socialIcon {
+            cursor: pointer;
+            width: 3rem;
+            height: 3rem;
+            background-color: #8433b7;
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .faSnapchat {
+                color: var(--white);
+                background-color: transparent;
+            }
+            &:hover {
+                border: 1px solid #0061f2;
+                padding: 1px;
+                box-shadow: 0 0 1rem rgba($color: #000000, $alpha: 0.3);
+            }
+        }
+        .socialIcon:first-child {
+            background-color: #3c5a99;
+        }
+        .socialIcon:last-child {
+            background-color: yellow;
+        }
+    }
+    .contact {
+        display: flex;
+        justify-content: center;
+        height: 6rem;
+        .pay {
+            margin: 20px 0 20px 50px;
+            padding: 0 0 0 50px;
+            height: 20px;
+            display: inline-flex;
+            vertical-align: top;
+            border-left: 1px solid #999;
+            text-align: left;
+            overflow: hidden;
+            .payImg {
+                height: 100%;
+                margin-right: 2.5rem;
+                cursor: pointer;
+            }
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .footerContent {
+        width: 100%;
+        background-color: #eee;
+        padding: 3.2rem 7rem;
+        display: flex;
+        .item {
+            width: 25%;
+            h4 {
+                margin-bottom: 1rem;
+                color: #666;
+            }
+            li {
+                line-height: 3rem;
+                cursor: pointer;
+                color: #666;
+                font-size: 1.4rem;
+
+                &:hover {
+                    color: #0770cf;
+                }
+            }
+        }
+    }
+}

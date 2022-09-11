@@ -1,0 +1,39 @@
+.wrapper {
+    background-color: rgb(78, 77, 77);
+    width: 30rem;
+    height: auto;
+    min-height: 500px;
+    color: var(--white);
+
+    ul {
+        margin-top: 2rem;
+    }
+    a {
+        .list {
+            padding: 1rem 2rem;
+            color: var(--text-color);
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid transparent;
+            &:hover {
+                opacity: 0.9;
+                border: 1px solid var(--border-color);
+            }
+        }
+    }
+
+    .icon {
+        margin-right: 1rem;
+    }
+    .active {
+        .list {
+            border: 1px solid var(--border-color);
+            color: white;
+        }
+    }
+    .inactive {
+        .list {
+            border: none;
+        }
+    }
+}

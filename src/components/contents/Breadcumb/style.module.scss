@@ -1,0 +1,31 @@
+.navigate {
+    display: flex;
+
+    .navLink {
+        padding: 1rem 0;
+        margin-right: 0.5rem;
+        &:last-child {
+            border: none;
+        }
+        a:last-child {
+            border: none;
+        }
+    }
+    .navLink a {
+        width: 100%;
+        color: black;
+        padding: 1rem;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.active {
+    font-weight: 900;
+}
+.noActive {
+    background-color: transparent;
+    a {
+        text-decoration: none;
+    }
+}

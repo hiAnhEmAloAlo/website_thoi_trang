@@ -1,0 +1,15 @@
+.wrapperFilter {
+    width: 25%;
+    height: auto;
+    margin-right: 1rem;
+    // margin: 2rem 2rem 2rem 0;
+    .content {
+        // padding: 1rem;
+        .itemFilter {
+            margin: 1rem 0;
+            input {
+                margin-right: 1rem;
+            }
+        }
+    }
+}

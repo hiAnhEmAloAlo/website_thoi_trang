@@ -1,0 +1,51 @@
+.wrapperAddOrder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 3;
+
+    .container {
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        max-height: 80vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        background-color: white;
+        .title {
+            width: 100%;
+            font-size: 3rem;
+            font-weight: 900;
+            text-align: center;
+            position: relative;
+            padding: 1rem;
+            color: white;
+            align-items: center;
+            background-color: #50b9e0;
+            span:last-child {
+                position: absolute;
+                top: 1rem;
+                right: 2rem;
+            }
+        }
+        .content {
+            padding: 1rem;
+            display: flex;
+            width: 100%;
+            .order {
+                flex-grow: 1;
+            }
+        }
+        .customer {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
